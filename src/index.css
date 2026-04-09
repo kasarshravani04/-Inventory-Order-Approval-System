@@ -9,5 +9,11 @@
 
 @theme{
     --font-Roboto:Roboto , sans-serif;
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-navyblue:#002C54;
+    --color-lightgray:;
+    --color-text:;
+    --color-btn:#8686AC;
     
 }
