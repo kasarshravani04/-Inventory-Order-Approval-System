@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainHeader from "./components/layout/MainHeader";
 import Login from "./pages/auth/login.jsx";
 import Register from "./pages/auth/register.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
 
       </div>
