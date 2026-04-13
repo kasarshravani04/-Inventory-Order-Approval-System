@@ -4,7 +4,7 @@ import passwordicon from "../../assets/icons/passwordicon.png";
 
 const Register = () => {
   const navigate = useNavigate();
-
+  
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -34,11 +34,13 @@ const Register = () => {
       return;
     }
 
-    const userData = {
-      email: formData.email,
-      password: formData.password,
-    };
+    const role = localStorage.getItem("role");
 
+    const userData = {
+          email: formData.email,
+          password: formData.password,
+          role: role,
+    };
     // Store in localStorage
     localStorage.setItem("user", JSON.stringify(userData));
 

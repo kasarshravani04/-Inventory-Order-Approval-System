@@ -29,8 +29,12 @@ const Login = () => {
       return;
     }
 
-    // Save login session
-    localStorage.setItem("loggedInUser", JSON.stringify({ email }));
+   const role = localStorage.getItem("role");
+
+         localStorage.setItem(
+         "loggedInUser",
+         JSON.stringify({ email, role })
+    );
 
     // Redirect to dashboard
     navigate("/dashboard");
